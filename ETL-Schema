@@ -1,0 +1,35 @@
+CREATE TABLE Major_Category (
+  AREA Integer NOT NULL,
+  ST VARCHAR(30) NOT NULL Primary Key,
+  STATE VARCHAR(30),
+  OCC_CODE VARCHAR(30),
+  OCC_TITLE VARCHAR(100),
+  OCC_GROUP VARCHAR(30),
+  TOT_EMP FLOAT
+);
+--emp_no	dept_no	from_date	to_date
+--select * From 
+
+CREATE TABLE Detail_Category (
+  AREA Integer NOT NULL,
+  ST VARCHAR(30) NOT NULL Primary Key,
+  STATE VARCHAR(30),
+  OCC_CODE VARCHAR(30),
+  OCC_TITLE VARCHAR(100),
+  OCC_GROUP VARCHAR(30),
+  TOT_EMP FLOAT
+);
+--select * From dept_manager
+--dept_no	emp_no	from_date	to_date
+
+CREATE TABLE US_Covid (
+  Country_Region VARCHAR(30),
+  Last Update VARCHAR(30),
+  Confirmed INTEGER,
+  Deaths INTEGER,
+  Recovered INTEGER,
+  Latitude FLOAT,
+  Longitude FLOAT,
+  City VARCHAR(60),
+  US_state VARCHAR(30)
+);
